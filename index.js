@@ -5,8 +5,11 @@ const https = require("https");
 const express = require("express");
 
 const PORT = 3000;
-
 const app = express();
+
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/sign-up.html");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
