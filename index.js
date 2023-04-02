@@ -44,7 +44,7 @@ app.post("/", function (req, res) {
     // New
     // 1023ff240d7cc32fa36176290e00a79c-us18
     // 85a6f6ad493246aa05e3242da6896aa6-us18
-    auth: `omar:${process.env.MAILCHIMP_API}-removeAlsoTheDash`,
+    auth: `omar:${process.env.DOTENV_KEY}-removeAlsoTheDash`,
   };
 
   const request = https.request(url, options, function (response) {
