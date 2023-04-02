@@ -1,11 +1,10 @@
 const http = require("http");
+const requests = require("requests");
+const bodyParser = require("body-parser");
+const https = require("https");
+
 const PORT = 3000;
 
-// const app = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Hello World!');
-// });
 const app = express();
 
 app.listen(PORT, () => {
